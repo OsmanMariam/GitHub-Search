@@ -1,0 +1,47 @@
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Playfair+Display+SC|Ultra&display=swap" rel="stylesheet">
+
+<div class="search">
+    <h1 style="color:#000; font-family: 'Cinzel', serif;">GitHub Search</h1>
+  
+  <app-github-search-form (emitSearch)="searchUser($event)" (emitRepo)="getRepos($event)"></app-github-search-form><br><br><br><br><br><br><br><br><br><br>
+  
+    <div class="card-columns">
+      <div appHighlight class="card">
+        <p>User :{{users.login}}</p>
+        <p>Followers :{{users.followers}}</p>
+        <p>Following :{{users.following}}</p>
+      </div>
+    </div>
+
+  
+  <div id="bag" style="margin-top: 3em;">
+    <h1 style="margin-bottom: 40px; font-family: 'Cinzel', serif;">Repositories</h1>
+    <div class="row" *ngIf="repos">
+      <div class="col-md-4" id="repos" *ngFor="let repo of repos">
+        <div >
+          <div >
+            <div class="card-repo" style="margin-bottom:40px;background-color: black; height: 400px;">
+              <p>Repo name: {{repo.full_name}}</p>
+              <p>Description: {{repo.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">User :{{users.login}}</li>
+    <li class="list-group-item">Followers :{{users.followers}}</li>
+    <li class="list-group-item">Following :{{users.following}}</li>
+  </ul>
+</div>
+
+
+
+
+ -->

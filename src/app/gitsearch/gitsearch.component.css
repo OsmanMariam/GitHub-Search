@@ -1,0 +1,54 @@
+.search{
+    
+    align-content: center;
+    /* background-image: url("https://sciton.com/wp-content/uploads/summit-background-1024x576.jpg"); */
+
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Ultra', serif;
+
+}
+.card{
+    background-color: transparent;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    position:absolute;
+    left:0%;
+    font-family: 'Great Vibes', cursive;
+
+}
+#bag{
+   text-align: center;
+   transform: translate(-0%, 8%);
+   font-family: 'Playfair Display SC', serif;
+   font-size: 30px;
+   color: silver;
+
+}
+
+#repo{
+    font-family: 'Lustria', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+.card-repo{
+    margin-bottom:40px;
+    background-color: rgb(47, 83, 100) !important;
+    height: 400px;
+    transition: all .6s ease-in-out; 
+}
+
+.card-repo:hover{
+    color: black;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.05);
+}
+
+p{
+font-family: 'Cormorant Garamond', serif !important;
+}
